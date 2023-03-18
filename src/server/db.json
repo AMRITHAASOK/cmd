@@ -1,0 +1,57 @@
+{
+    "contacts": [
+      {
+        "id":"c1",
+        "name": "Alen",
+        "email": "alen@gmail.com",
+        "phoneno":"8779696664",
+        "photo":"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "company":"luminar",
+        "groupId":"1"
+      },
+      {
+        "id":"c2",
+        "name": "Aman",
+        "email": "alen@gmail.com",
+        "phoneno":"8779696664",
+        "photo":"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "company":"luminar",
+        "groupId":"1"
+      },
+      {
+        "id":"c3",
+        "name": "Suma",
+        "email": "alen@gmail.com",
+        "phoneno":"8779696664",
+        "photo":"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "company":"luminar",
+        "groupId":"1"
+      },
+      {
+        "id":"c4",
+        "name": "Minnu",
+        "email": "alen@gmail.com",
+        "phoneno":"8779696664",
+        "photo":"https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "company":"luminar",
+        "groupId":"1"
+      }
+    ],
+    "groups": [
+    {
+        "id":"1",
+        "name": "friends"
+    },
+    {
+        "id":"2",
+        "name": "family"
+    },
+    {
+        "id":"3",
+        "name": "company"
+    }
+
+    ]
+      
+    
+  }

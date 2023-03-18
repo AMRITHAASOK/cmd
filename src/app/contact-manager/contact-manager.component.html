@@ -1,0 +1,62 @@
+<p>Login Detailes:{{loginDate | date:'short'}}</p>
+
+<div class="container ">
+    <div class="row">
+        <div class="col">
+            <h1 class="m-5 text-center">Contact Mangement Application</h1>
+            <a routerLink="/contact/add" class="btn btn-success" style="float: right;">
+                <i class="fa-solid fa-user-plus"></i>
+                Add New
+            </a>
+            <br> <br>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor, maiores placeat sapiente quidem nulla nemo voluptates deleniti at sint nobis atque iure eligendi doloribus. Mollitia aut expedita recusandae? Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil, inventore repellendus itaque numquam fuga magnam placeat repudiandae ipsam, cupiditate consequuntur ducimus neque natus temporibus quidem enim voluptate odit eos!</p>
+            <div class="row">
+                <div class="col-6">
+                    <input (keyup)="search($event)" type="text" class="form-control" placeholder="Search Contact Here">
+                </div>
+                <!-- <div class="col-6">
+                    <button class="btn btn-outline-primary">Search</button>
+                </div> -->
+            </div>
+
+            <!-- card design -->
+            <div class="container m-5">
+                <div class="row">
+                     <div class="col-6"  *ngFor="let contact of allContacts | filter:searchKey:'name'">
+                        <div class="card">
+
+ <div class="card-body bg-light p-5 ">
+    <div class="row">
+    <div class="col-4"  >
+        <img [src]="contact.photo" width="100px" alt="">
+
+   
+        <ul class="list-group">
+            <li class="list-group-item">Name :{{contact.name}}</li>
+            <li class="list-group-item">Email:{{contact.email}}</li>
+            <li class="list-group-item">Mobile:{{contact.mobile}}</li>
+            </ul>
+    </div>
+    <div class="col-1">
+        <!-- view -->
+        <a routerLink="/contact/view/{{contact.id}}" class="btn btn-warning">
+            <i class="fa-solid fa-eye"></i>
+        </a>
+        <!-- edit -->
+        <a routerLink="/contact/update/Id" class="btn btn-primary mt-2">
+            <i class="fa-solid fa-pen"></i>
+        </a>
+        <!-- delete -->
+        <button class="btn btn-danger mt-2">
+            <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+</div>
+ </div>                       </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

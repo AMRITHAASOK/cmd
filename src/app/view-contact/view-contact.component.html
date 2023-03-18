@@ -1,0 +1,37 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center m-4">
+                <i class="fa-solid fa-user"></i>
+
+                View Contact
+            </h1>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor, maiores placeat sapiente quidem nulla nemo voluptates deleniti at sint nobis atque iure eligendi doloribus. Mollitia aut expedita recusandae? Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil, inventore repellendus itaque numquam fuga magnam placeat repudiandae ipsam, cupiditate consequuntur ducimus neque natus temporibus quidem enim voluptate odit eos!</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <!-- <pre>{{groupId|json}}</pre> -->
+            <pre>{{groupName|json}}</pre>
+            <img [src]="contact.photo" alt="" width="500px" height="500px">
+
+        </div>
+        <div class="col-8">
+            <ul class="list-group mt-5">
+                <li class="list-group-item">Name : {{contact.name}}</li>
+                <li class="list-group-item">Email:{{contact.email}}</li>
+                <li class="list-group-item">Mobile:{{contact.phoneno}}</li>
+                <li class="list-group-item">company {{contact.company}}</li>
+                <li class="list-group-item">Title: {{contact.company}}</li>
+                <li class="list-group-item">Group :{{groupName}}</li>
+            </ul>
+            <a routerLink="/" class="btn btn-success mt-5 " style="float: right;"><i class="fa-solid fa-arrow"></i>Back to Home</a>
+        </div>
+    </div>
+</div>
+

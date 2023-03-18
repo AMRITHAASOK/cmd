@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Climate+Crisis&family=EB+Garamond:ital@1&family=Explora&family=Inspiration&family=Oxygen:wght@300&family=PT+Sans+Narrow&family=Righteous&family=Roboto:ital,wght@1,300&family=Seymour+One&family=Tilt+Prism&display=swap');
+h1{
+    font-family: 'Parisienne', cursive; 
+}

@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center m-4">
+                <i class="fa-solid fa-user-plus"></i>
+
+                Add Contact
+            </h1>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor, maiores
+                placeat sapiente quidem nulla nemo voluptates deleniti at sint nobis atque iure eligendi doloribus.
+                Mollitia aut expedita recusandae? Voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nam nihil, inventore repellendus itaque numquam fuga magnam placeat repudiandae ipsam, cupiditate
+                consequuntur ducimus neque natus temporibus quidem enim voluptate odit eos!</p>
+
+        </div>
+    </div>
+
+    <pre>
+        {{contactName}}
+    </pre>
+    <!-- add form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form class="m-5 border border-dark border-3 p-5 rounded">
+                    <div class="md-2">
+                        <input [(ngModel)]="contactName" name="contactName" type="text" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" class="form-control" placeholder="Photo url">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" class="form-control" placeholder="Enter Email ">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" class="form-control" placeholder="Enter Mobile">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" class="form-control" placeholder="Enter company name">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" class="form-control" placeholder="Enter title">
+                    </div>
+                    <div class="mt-2">
+                        <select class="form-control">
+                            <option value="" selected hidden disabled>Select</option>
+                            <option value="{{group.id}}" *ngFor="let group of allGroups">{{group.name}}</option>
+                          
+                        </select>
+                    </div>
+                    <div class="mt-2">
+                        <input type="submit" value="create" class="btn btn-success">
+                        &nbsp;
+                        <a routerLink="/" style="float: right;" class="btn btn-danger">Close</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+                <img src="https://th.bing.com/th/id/R.6c98cdfd32985c5349db505101e90688?rik=BwbYn0vyDVBk%2fA&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2009%2f11%2fpeople-icon-jpeg_78546.jpg&ehk=59%2f7uhU%2fDhh2Y9QLA6rOL8xImL3%2bbZJEqDgAhtxAQeY%3d&risl=&pid=ImgRaw&r=0"
+                    alt="" width="500px" height="500px">
+
+            </div>
+        </div>
+
+    </div>
+</div>
